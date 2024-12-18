@@ -246,5 +246,14 @@ linkTitulo.addEventListener("click", () => {
     listadoProductos.scrollIntoView({ behavior: "smooth" });
 });
 
+function agregarFooter() {
+  const footer = document.getElementById("footer");
+  
+  const parrafoFooter = document.createElement("p");
+  parrafoFooter.textContent =
+    "© Copyright 2024 - Tienda Arcade By Gaston Zarate | Todos los derechos reservados | Córdoba - Córdoba, Argentina.";
+  
+  footer.appendChild(parrafoFooter);
+}
 
-
+agregarFooter();
