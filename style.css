@@ -63,12 +63,15 @@ header {
     margin: 0;
 }
 
-#encabezado img {
-    width: 40%; 
-    height: auto; 
+#imgagregada {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
     margin: 0;
     padding: 0;
-    display: block; 
+    display: center;
+    box-shadow: 0 0 10px #ff1177;
+    border-radius: 50%; 
 }
 #footer {
     background-color: #222;
@@ -144,7 +147,7 @@ header {
 /* Botón 1 de agregar al carrito */
 #agregar-MLA1443075609 {
     font-family: "Rubik","sans-serif";	
-    margin-top: 60px; 
+    margin-top: 90px; 
     left: 20%;
     justify-content: center; 
     color: #ff1177;
@@ -210,7 +213,7 @@ header {
 /* Botón 4 de agregar al carrito */
 #agregar-MLA1460745771 {
     font-family: "Rubik","sans-serif";	
-    margin-top: 90px;
+    margin-top: 63px;
     left: 20%;
     justify-content: center; 
     color: #ff1177;
@@ -232,7 +235,7 @@ header {
 /* Botón 5 de agregar al carrito */
 #agregar-MLA832927564 {
     font-family: "Rubik","sans-serif";	
-    margin-top: 38px; 
+    margin-top: 45px; 
     left: 20%;
     justify-content: center; 
     color: #ff1177;
@@ -254,7 +257,7 @@ header {
 /* Botón 6 de agregar al carrito */
 #agregar-MLA1456695921 {
     font-family: "Rubik","sans-serif";	
-    margin-top: 56px;
+    margin-top: 57px;
     left: 20%;
     justify-content: center; 
     color: #ff1177;
@@ -276,7 +279,7 @@ header {
 /* Botón 7 de agregar al carrito */
 #agregar-MLA1451728693 {
     font-family: "Rubik","sans-serif";	
-    margin-top: 95px; 
+    margin-top: 97px; 
     left: 20%;
     justify-content: center; 
     color: #ff1177;
@@ -298,7 +301,7 @@ header {
 /* Botón 8 de agregar al carrito */
 #agregar-MLA1368827159 {
     font-family: "Rubik","sans-serif";	
-    margin-top: 56px; 
+    margin-top: 82px; 
     left: 20%;
     justify-content: center; 
     color: #ff1177;
@@ -320,7 +323,7 @@ header {
 /* Botón 9 de agregar al carrito */
 #agregar-MLA1417120141 {
     font-family: "Rubik","sans-serif";	
-    margin-top: 94px; 
+    margin-top: 98px; 
     left: 20%;
     justify-content: center; 
     color: #ff1177;

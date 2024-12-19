@@ -1,4 +1,15 @@
 const productos = [];
+const imgProductos = [
+  "./imagenes/img1.png",
+  "./imagenes/img2.png",
+  "./imagenes/img3.png",
+  "./imagenes/img4.png",
+  "./imagenes/img5.png",
+  "./imagenes/img6.png",
+  "./imagenes/img7.png",
+  "./imagenes/img8.png",
+  "./imagenes/img9.png",
+];
 
 function mostrarProductos() {
   const contenedorProductos = document.getElementById("productos-en-venta");
@@ -12,7 +23,7 @@ function mostrarProductos() {
       productos.length = 0; 
       contenedorProductos.innerHTML = ""; 
   
-      data.slice(0, 9).forEach((item) => {
+      data.slice(0, 9).forEach((item, index) => {
         productos.push({
           id: item.id,
           title: item.title,
@@ -25,16 +36,19 @@ function mostrarProductos() {
         card.style.width = "18rem";
         card.style.height = "32rem";
         card.style.margin = "10px";
-
+        
+        const imagenAgregada = imgProductos[index];
         card.innerHTML = `
           <h3>${item.title}</h3>
-          <img src="${item.thumbnail}" alt="${item.title}" width="200" height="200">
+          <img id = "imgagregada" src="${imagenAgregada}" alt="${item.title}">
           <div class="card-body">
             <h5>${item.title}</h5>
             <p>Precio: $${item.price.toLocaleString("es-ES")}</p>
             <button id="agregar-${item.id}" class="btn-agregar">Agregar al Carrito</button>
           </div>
         `;
+    
+
 
         contenedorProductos.appendChild(card);
       });
@@ -257,3 +271,6 @@ function agregarFooter() {
 }
 
 agregarFooter();
+
+
+
