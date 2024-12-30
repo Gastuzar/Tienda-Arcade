@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header id="encabezado" class="encabezado">
+        <nav class="navbar">
+        </nav>
+    </header>
+
+    <!-- Sección de productos -->
+    <main>
+        <section id="productos">
+            <h2 id="productos-titulo">Productos Disponibles</h2>
+            <div id="productos-en-venta">
+            </div>
+        </section>
+        
+
+        <!-- Sección del carrito -->
+        <section id="carrito">
+            <h3>Carrito de Compras</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-carrito">
+                    <!-- Productos agregados al carrito -->
+                </tbody>
+            </table>
+            <div class="resumen">
+                <p>Total: <span id="total-carrito">0</span></p>
+                <button id="finalizar-compra" class="btn-finalizar">Finalizar Compra</button>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+    
+    </footer>
+    <!-- JavaScript externo -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
+
