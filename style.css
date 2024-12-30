@@ -9,7 +9,7 @@ body {
 }
 
 /* Tipografías y Titulares */
-h1, h3 {
+h1, h3, #productos-titulo {
     font-family: 'ubuntu', sans-serif;
     font-size: 4rem;
     font-weight: bold;
@@ -18,22 +18,13 @@ h1, h3 {
     margin: 0 0 10px;
     color: #ff33cc; 
     text-shadow: 0 0 10px #ff1177; 
-}
-#productos-titulo {
-    font-family: 'ubuntu', sans-serif;
-    font-size: 4rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 30px;
-    margin: 0 0 10px;
-    color: #ff33cc; 
-    text-shadow: 0 0 10px #ff1177;
     transition: transform 1.3s ease, color 0.3s ease;
-    cursor: pointer; 
 }
+
 #productos-titulo:hover {
     transform: scale(1.2); 
     color: #ff1177; 
+    cursor: pointer;
 }
 
 a, button {
@@ -42,25 +33,16 @@ a, button {
 }
 
 header {
-    background-color: #2b2828; /* Cabecera oscura */
-
+    background-color: #2b2828;
     color: #ff33cc;
     padding: 15px;
     text-align: center;
     box-shadow: 0 0 0px #ff1177;
     text-transform: uppercase;
     height: 100px;
-    display: center;
-    justify-content: space-between;
-    align-items: center
-}
-#encabezado {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 0; 
-    padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #footer {
@@ -68,24 +50,15 @@ header {
     color: #ff33cc;
     padding: 15px;
     text-align: center;
-    
-    top: 0;             
-    left: 50%;       
-    
     display: flex; 
     justify-content: center;
     align-items: center;    
-
     width: 100%; 
     height: 20px; 
 }
 
 /* Contenedor de productos */
-/* CSS optimizado para mantener el botón siempre a la misma altura */
-
-/* Contenedor principal para productos en venta */
 #productos-en-venta {
-    font-family: ubuntu-mono, sans-serif;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -95,7 +68,6 @@ header {
 
 /* Carta de producto */
 #cartaproducto {
-    font-family: 'ubuntu-mono', sans-serif;
     border: 2px solid #ff33cc; 
     padding: 15px;
     border-radius: 10px;
@@ -116,7 +88,6 @@ header {
     transform: translateY(-5px); 
 }
 
-/* Imagen del producto */
 #cartaproducto img {
     width: 180px;
     height: 180px;
@@ -126,7 +97,6 @@ header {
     border-radius: 10%;
 }
 
-/* Título del producto */
 #cartaproducto h3 {
     margin: 10px 0;
     font-size: 1.1rem;
@@ -135,7 +105,6 @@ header {
     min-height: 3rem; 
 }
 
-/* Descripción del producto */
 #cartaproducto p {
     font-family: ubuntu-mono, sans-serif;
     margin: 5px 0;
@@ -143,11 +112,10 @@ header {
     color: #eee;
 }
 
-/* Botón de agregar al carrito */
-.btn-agregar-0 {
-    font-family: "Rubik", "sans-serif";    
+/* Botones */
+button {
+    font-family: "Rubik", "sans-serif";
     margin-top: auto; 
-    color: #ff1177;
     background-color: #ff33cc;
     color: white;
     border: none;
@@ -160,201 +128,12 @@ header {
     padding: 10px 20px;
 }
 
-.btn-agregar-1:hover {
+button:hover {
     background-color: #ff1177;
     box-shadow: 0 0 15px #ff33cc;
 }
 
-/* Botón de agregar al carrito */
-.btn-agregar-1 {
-    font-family: "Rubik", "sans-serif";    
-    margin-top: auto; 
-    color: #ff1177;
-    background-color: #ff33cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 5px #ff1177;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-}
-
-.btn-agregar-2:hover {
-    background-color: #ff1177;
-    box-shadow: 0 0 15px #ff33cc;
-}
-
-/* Botón de agregar al carrito */
-.btn-agregar-2 {
-    font-family: "Rubik", "sans-serif";    
-    margin-top: auto; 
-    color: #ff1177;
-    background-color: #ff33cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 5px #ff1177;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-}
-
-.btn-agregar-2:hover {
-    background-color: #ff1177;
-    box-shadow: 0 0 15px #ff33cc;
-}
-/* Botón de agregar al carrito */
-.btn-agregar-3 {
-    font-family: "Rubik", "sans-serif";    
-    margin-top: auto; 
-    color: #ff1177;
-    background-color: #ff33cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 5px #ff1177;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-}
-
-.btn-agregar-3:hover {
-    background-color: #ff1177;
-    box-shadow: 0 0 15px #ff33cc;
-}
-/* Botón de agregar al carrito */
-.btn-agregar-4 {
-    font-family: "Rubik", "sans-serif";    
-    margin-top: auto; 
-    color: #ff1177;
-    background-color: #ff33cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 5px #ff1177;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-}
-
-.btn-agregar-4:hover {
-    background-color: #ff1177;
-    box-shadow: 0 0 15px #ff33cc;
-}
-/* Botón de agregar al carrito */
-.btn-agregar-5 {
-    font-family: "Rubik", "sans-serif";    
-    margin-top: auto; 
-    color: #ff1177;
-    background-color: #ff33cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 5px #ff1177;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-}
-
-.btn-agregar-5:hover {
-    background-color: #ff1177;
-    box-shadow: 0 0 15px #ff33cc;
-}
-/* Botón de agregar al carrito */
-.btn-agregar-6 {
-    font-family: "Rubik", "sans-serif";    
-    margin-top: auto;
-    color: #ff1177;
-    background-color: #ff33cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 5px #ff1177;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-}
-
-.btn-agregar-6:hover {
-    background-color: #ff1177;
-    box-shadow: 0 0 15px #ff33cc;
-}
-/* Botón de agregar al carrito */
-.btn-agregar-7 {
-    font-family: "Rubik", "sans-serif";    
-    margin-top: auto; 
-    color: #ff1177;
-    background-color: #ff33cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 5px #ff1177;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-}
-
-.btn-agregar-7:hover {
-    background-color: #ff1177;
-    box-shadow: 0 0 15px #ff33cc;
-}
-/* Botón de agregar al carrito */
-.btn-agregar-8 {
-    font-family: "Rubik", "sans-serif";    
-    margin-top: auto;
-    color: #ff1177;
-    background-color: #ff33cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 5px #ff1177;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-}
-
-.btn-agregar-8:hover {
-    background-color: #ff1177;
-    box-shadow: 0 0 15px #ff33cc;
-}
-/* Botón de agregar al carrito */
-.btn-agregar-9 {
-    font-family: "Rubik", "sans-serif";    
-    margin-top: auto; 
-    color: #ff1177;
-    background-color: #ff33cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 5px #ff1177;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-}
-
-.btn-agregar-9:hover {
-    background-color: #ff1177;
-    box-shadow: 0 0 15px #ff33cc;
-}
+/* Específico de carrito */
 #carrito {
     padding: 20px;
     margin-top: 20px;
@@ -382,43 +161,10 @@ header {
     font-size: 1.2rem;
     color: #ff33cc;
 }
-.btn-eliminar {
-    font-family: "Rubik","sans-serif";	
-    background-color: #ff33cc;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    box-shadow: 0 0 5px #ff1177;
-    transition: 0.3s;
-}
 
-.btn-eliminar:hover {
-    background-color: #ff1177;
-    box-shadow: 0 0 15px #ff33cc;
-}
-
-.btn-finalizar {
-    font-family: "Rubik","sans-serif";	
-    background-color: #ff33cc;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    box-shadow: 0 0 5px #ff1177;
-    transition: 0.3s;
-}
-
-.btn-finalizar:hover {
-    background-color: #ff1177;
-    box-shadow: 0 0 15px #ff33cc;
-}
-
-/*Botones de sweetalert*/
+/* SweetAlert2 */
 .swal2-popup {
-    font-family: "Rubik","sans-serif";	
+    font-family: "Rubik", "sans-serif"; 
     background-color: #222; 
     color: #fff; 
     box-shadow: 0 0 15px #ff33cc;
@@ -426,7 +172,7 @@ header {
     padding: 10px 20px;
 }
 
-  
+/* Media queries */
 @media (max-width: 768px) {
     #productos-en-venta {
         flex-direction: column;
@@ -455,4 +201,5 @@ header {
         width: 100%;
     }
 }
+
 
